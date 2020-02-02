@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="dbup.ps1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="dbup.ps1">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CommandLineParser" Version="2.7.82" />
+    <PackageReference Include="dbup" Version="4.3.0" />
+    <PackageReference Include="dbup-mysql" Version="4.3.0" />
+    <PackageReference Include="MySql.Data" Version="8.0.19" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HelloWorld\HelloWorld.csproj" />
+  </ItemGroup>
+
+</Project>

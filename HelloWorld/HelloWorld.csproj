@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Step0001 - CreateTables.sql" />
+    <None Remove="Step0002 - Alter1.sql" />
+    <None Remove="Step0003 - Alter2.sql" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Step0001 - CreateTables.sql" />
+    <EmbeddedResource Include="Step0002 - Alter1.sql" />
+    <EmbeddedResource Include="Step0003 - Alter2.sql" />
+  </ItemGroup>
+
+</Project>
